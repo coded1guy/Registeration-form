@@ -79,6 +79,10 @@ form {
     background: var(--white);
     box-shadow: 0 6px 0 0px rgba(0,0,0,0.17);
 }
+form > div {
+    width: 100%;
+    position: relative;
+}
 input {
     width: 100%;
     border: 1px solid var(--neutral-grayish-blue);
@@ -92,9 +96,22 @@ input {
     color: var(--accent-blue);
     transition: .5s ease-in-out;
 }
+.req {
+    display: none;
+    width: 20px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    
+}
 input:focus {
     color:var(--neutral-dark-blue);
+    border: 1px solid var(--neutral-dark-blue);
 }
+/* input:focus ~ .req {
+    display: block;
+} */
 form button {
     background: var(--primary-green);
     color: var(--white);
