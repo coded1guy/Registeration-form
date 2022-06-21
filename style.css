@@ -134,8 +134,12 @@ form span {
 }
 form a {
     color: var(--primary-red);
+    text-decoration: none;
+    cursor: pointer;
 }
-
+form a:hover {
+    text-decoration: underline;
+}
 @media screen and (min-width: 376px) {
     main {
         background: var(--primary-red) url(images/bg-intro-desktop.png) no-repeat;
